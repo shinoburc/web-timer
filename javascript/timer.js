@@ -101,9 +101,9 @@ $( document ).ready(function() {
 
   $( "#clear " ).click(function( event ) {
     stopTimer();
-    setHour( "" );
-    setMinute( "" );
-    setSecond( "" );
+    setHour( 0 );
+    setMinute( 0 );
+    setSecond( 0 );
   });
 
   $( "#plus10m" ).click(function( event ) {
@@ -119,7 +119,7 @@ $( document ).ready(function() {
     if( second + 10 <= 59 ) {
       second += 10;
     }
-    setMinute( second );
+    setSecond( second );
   });
 });
 
