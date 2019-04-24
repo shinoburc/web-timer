@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title>Timer</title>
+    <meta name="author" content=".shinoburc">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link href="css/timer.css" rel="stylesheet">
+    <script src="javascript/timer.js"></script>
+  </head>
+
+  <body>
+    <audio id="bell" preload="auto" loop>
+      <source src="sound/Mallet.ogg" type="audio/ogg">
+    </audio>
+
+    <div id="count" class="card">
+      <div class="card-header timer-header">
+        <button type="button" class="btn btn-primary btn-lg" id="start">
+          <i class="fas fa-play">&nbsp;</i> Start
+        </button>
+        <button type="button" class="btn btn-danger btn-lg" id="stop">
+          <i class="fas fa-stop">&nbsp;</i> Stop
+        </button>
+        <button type="button"  class="btn btn-secondary btn-lg" id="clear">
+          <i class="fas fa-trash-alt">&nbsp;</i> Clear
+        </button>
+      </div>
+      <div class="card-body timer-body">
+        <div class="input-group">
+          <input type="number" class="form-control timer-control" placeholder="00" max="99" min="0" id="hour">
+          <div>:</div>
+          <input type="number" class="form-control timer-control" placeholder="00" max="59" min="0" id="minute">
+          <div>:</div>
+          <input type="number" class="form-control timer-control" placeholder="00" max="59" min="0" id="second">
+        </div>
+      </div>
+      <div class="card-footer timer-footer">
+        <button type="button" class="btn btn-primary btn-lg" id="plus10m">
+          <i class="fas fa-plus">&nbsp;</i> 10 m
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" id="plus10s">
+          <i class="fas fa-plus">&nbsp;</i> 10 s
+        </button>
+      </div>
+    </div>
+
+  </body>
+</html>

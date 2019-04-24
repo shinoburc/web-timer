@@ -1,0 +1,19 @@
+.timer-header {
+  text-align: center;
+}
+.timer-body {
+  text-align: center;
+  font-size: 20vw;
+}
+.timer-footer{
+  text-align: center;
+}
+.timer-control{
+  text-align: center;
+  font-size: 20vw;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+     opacity: 1;
+}
